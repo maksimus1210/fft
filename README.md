@@ -16,7 +16,7 @@
 * values.size() is power of 2
 
 ## What about example?
-```
+```cpp
 #include <fft/fft.h>
 #include <iostream>
 #include <vector>
@@ -35,3 +35,10 @@ int main() {
     return 0;    
 }
 ```
+
+## How to compile?
+### Without parallelism:
+``` g++ -I/path/to/fft/src/include/trs main.cc -std=c++14 ```
+### With openmp
+``` g++ -I/path/to/fft/src/include/trs main.cc -std=c++14 -fopenmp -pthread ```
+
